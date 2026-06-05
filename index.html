@@ -6,140 +6,110 @@
 <title>Sunil Dhote | Software Development & Hardware Integration</title>
 
 <style>
-
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Segoe UI, Arial, sans-serif;
+font-family:Arial, sans-serif;
 }
 
 body{
-background:#f4f7fb;
+background:#f5f7fb;
 color:#333;
 }
 
 header{
-background:#0a2f6b;
+background:#0d47a1;
 color:white;
 padding:20px;
-position:sticky;
-top:0;
-z-index:1000;
+text-align:center;
+}
+
+header h1{
+font-size:42px;
+}
+
+header p{
+font-size:20px;
+margin-top:10px;
 }
 
 nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-max-width:1200px;
-margin:auto;
+background:#08306b;
+padding:12px;
+text-align:center;
 }
 
-.logo{
-font-size:28px;
+nav a{
+color:white;
+text-decoration:none;
+margin:0 15px;
 font-weight:bold;
 }
 
-nav ul{
-display:flex;
-list-style:none;
-gap:25px;
-}
-
-nav ul li a{
-color:white;
-text-decoration:none;
-font-size:18px;
-}
-
-.hero{
-background:white;
-padding:70px 20px;
-text-align:center;
-}
-
-.hero h1{
-font-size:55px;
-color:#0a2f6b;
-}
-
-.hero h2{
-font-size:30px;
-margin-top:15px;
-color:#0066cc;
-}
-
-.hero p{
-max-width:900px;
-margin:25px auto;
-font-size:18px;
-line-height:1.8;
-}
-
-.btn{
-display:inline-block;
-background:#0066cc;
-color:white;
-padding:15px 30px;
-border-radius:6px;
-text-decoration:none;
-margin:10px;
-}
-
-.section{
-padding:60px 20px;
+section{
+padding:50px 20px;
 max-width:1200px;
 margin:auto;
 }
 
-.section h2{
+h2{
 text-align:center;
-margin-bottom:40px;
-font-size:38px;
-color:#0a2f6b;
+margin-bottom:30px;
+color:#0d47a1;
+}
+
+.hero{
+text-align:center;
+background:white;
+padding:60px 20px;
+border-radius:10px;
+}
+
+.hero p{
+font-size:18px;
+line-height:1.8;
+max-width:900px;
+margin:auto;
 }
 
 .cards{
 display:flex;
 flex-wrap:wrap;
-justify-content:center;
 gap:20px;
+justify-content:center;
 }
 
 .card{
 background:white;
-width:340px;
 padding:25px;
-border-radius:12px;
-box-shadow:0 3px 12px rgba(0,0,0,0.15);
-text-align:center;
+width:320px;
+border-radius:10px;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
 }
 
 .card h3{
-color:#0066cc;
+color:#0d47a1;
 margin-bottom:15px;
 }
 
 .gallery{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:20px;
 }
 
 .gallery img{
 width:100%;
-height:250px;
-object-fit:cover;
 border-radius:10px;
 box-shadow:0 3px 10px rgba(0,0,0,0.15);
 }
 
-.contact-box{
+.contact{
 background:white;
 padding:30px;
 border-radius:10px;
-box-shadow:0 3px 12px rgba(0,0,0,0.15);
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
 }
 
 input,textarea{
@@ -151,63 +121,48 @@ border-radius:5px;
 }
 
 button{
-background:#0066cc;
+background:#0d47a1;
 color:white;
+padding:12px 25px;
 border:none;
-padding:15px 30px;
 border-radius:5px;
 cursor:pointer;
 }
 
-.info{
-text-align:center;
-line-height:2;
-font-size:18px;
+.policy{
+background:white;
+padding:20px;
+margin-bottom:20px;
+border-radius:10px;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
 }
 
 footer{
-background:#0a2f6b;
+background:#0d47a1;
 color:white;
 text-align:center;
 padding:20px;
-margin-top:50px;
+margin-top:30px;
 }
 
 .whatsapp{
 position:fixed;
-bottom:20px;
 right:20px;
+bottom:20px;
 background:#25D366;
 color:white;
-padding:15px 25px;
-border-radius:50px;
+padding:15px 20px;
 text-decoration:none;
+border-radius:50px;
 font-weight:bold;
-box-shadow:0 3px 10px rgba(0,0,0,0.2);
 }
 
 @media(max-width:768px){
-
-.hero h1{
-font-size:40px;
-}
-
-.hero h2{
-font-size:24px;
-}
-
-nav{
+.cards{
 flex-direction:column;
-gap:15px;
+align-items:center;
 }
-
-nav ul{
-flex-wrap:wrap;
-justify-content:center;
 }
-
-}
-
 </style>
 
 </head>
@@ -215,58 +170,43 @@ justify-content:center;
 <body>
 
 <header>
-
-<nav>
-
-<div class="logo">Sunil Dhote</div>
-
-<ul>
-<li><a href="#about">About</a></li>
-<li><a href="#services">Services</a></li>
-<li><a href="#gallery">Gallery</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-
-</nav>
-
+<h1>Sunil Dhote</h1>
+<p>Software Development & Hardware Integration</p>
 </header>
 
+<nav>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+<a href="#policies">Policies</a>
+</nav>
+
 <section class="hero">
-
-<h1>Sunil Dhote</h1>
-
-<h2>Software Development & Hardware Integration</h2>
-
+<h2>Welcome</h2>
 <p>
-Specialized in Software Development, Embedded Systems,
-Microcontroller Programming, Industrial Automation,
-Weighing Scale Solutions and Hardware Integration.
+Professional Software Development, Embedded Systems,
+Microcontroller Programming, Hardware Integration,
+Industrial Automation, Weighing Scale Solutions
+and Technical Consulting Services.
 </p>
-
-<a href="#contact" class="btn">Contact Me</a>
-
 </section>
 
-<section id="about" class="section">
-
+<section id="about">
 <h2>About Me</h2>
 
-<div class="card" style="margin:auto;max-width:900px;width:100%;">
-
-<p style="line-height:2;font-size:18px;">
-
-I develop professional software solutions and integrate them with
-hardware systems. My experience includes microcontroller firmware,
-industrial electronics, weighing scales, automation systems,
-custom desktop applications and embedded products.
-
+<div class="card" style="width:100%;">
+<p style="line-height:2;">
+I specialize in software development, embedded systems,
+hardware integration, industrial electronics and automation solutions.
+My expertise includes microcontroller firmware, weighing scale systems,
+custom desktop applications and technical consulting.
 </p>
-
 </div>
 
 </section>
 
-<section id="services" class="section">
+<section id="services">
 
 <h2>Services</h2>
 
@@ -278,78 +218,70 @@ custom desktop applications and embedded products.
 </div>
 
 <div class="card">
-<h3>Embedded Systems</h3>
-<p>Microcontroller programming and firmware development.</p>
-</div>
-
-<div class="card">
 <h3>Hardware Integration</h3>
 <p>Software integration with electronic hardware.</p>
 </div>
 
 <div class="card">
+<h3>Embedded Systems</h3>
+<p>Microcontroller firmware and embedded products.</p>
+</div>
+
+<div class="card">
 <h3>Industrial Automation</h3>
-<p>Automation and control systems.</p>
+<p>Automation and control system solutions.</p>
 </div>
 
 <div class="card">
 <h3>Weighing Scale Solutions</h3>
-<p>Electronic weighing and load cell systems.</p>
+<p>Load cell and weighing scale system development.</p>
 </div>
 
 <div class="card">
 <h3>Technical Consulting</h3>
-<p>Engineering and troubleshooting support.</p>
+<p>Engineering support and troubleshooting.</p>
 </div>
 
 </div>
 
 </section>
 
-<section id="gallery" class="section">
+<section id="gallery">
 
 <h2>Project Gallery</h2>
 
 <div class="gallery">
 
-<img src="images/project1.jpg" alt="Project 1">
-<img src="images/project2.jpg" alt="Project 2">
-<img src="images/project3.jpg" alt="Project 3">
-<img src="images/project4.jpg" alt="Project 4">
-<img src="images/project5.jpg" alt="Project 5">
-<img src="images/project6.jpg" alt="Project 6">
+<img src="https://via.placeholder.com/600x400?text=Project+1">
+<img src="https://via.placeholder.com/600x400?text=Project+2">
+<img src="https://via.placeholder.com/600x400?text=Project+3">
+<img src="https://via.placeholder.com/600x400?text=Project+4">
 
 </div>
 
 <p style="text-align:center;margin-top:20px;">
-Upload your project photos into an <b>images</b> folder in GitHub.
+Upload your actual project photos later.
 </p>
 
 </section>
 
-<section id="contact" class="section">
+<section id="contact">
 
 <h2>Contact Information</h2>
 
-<div class="info">
+<div class="contact">
 
 <p><b>Name:</b> Sunil Dhote</p>
-
 <p><b>Work:</b> Software Development & Hardware Integration</p>
-
 <p><b>Address:</b> 23 Samata Colony, Kathora Road, Amravati</p>
-
 <p><b>Mobile:</b> 9890205260</p>
+<p><b>Email:</b> sunildhotesanway@gmail.com</p>
 
-</div>
-
-<br><br>
-
-<div class="contact-box">
+<br>
 
 <h3>Send Enquiry</h3>
 
-<form action="https://formsubmit.co/YOUR_EMAIL@gmail.com" method="POST">
+<form action="https://formsubmit.co/sunildhotesanway@gmail.com" method="POST">
 
 <input type="text" name="name" placeholder="Your Name" required>
 
@@ -357,7 +289,7 @@ Upload your project photos into an <b>images</b> folder in GitHub.
 
 <input type="text" name="phone" placeholder="Mobile Number">
 
-<textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+<textarea name="message" rows="5" placeholder="Your Message" required></textarea>
 
 <button type="submit">Send Message</button>
 
@@ -367,10 +299,38 @@ Upload your project photos into an <b>images</b> folder in GitHub.
 
 </section>
 
+<section id="policies">
+
+<h2>Policies</h2>
+
+<div class="policy">
+<h3>Privacy Policy</h3>
+<p>
+Customer information is collected only for communication,
+service delivery and support purposes and is never sold to third parties.
+</p>
+</div>
+
+<div class="policy">
+<h3>Terms & Conditions</h3>
+<p>
+Services are provided based on mutual agreement.
+Project scope, timelines and pricing are discussed before work begins.
+</p>
+</div>
+
+<div class="policy">
+<h3>Refund Policy</h3>
+<p>
+Refund requests are reviewed on a case-by-case basis depending on
+the nature of the service and work completed.
+</p>
+</div>
+
+</section>
+
 <footer>
-
 © 2026 Sunil Dhote | Software Development & Hardware Integration
-
 </footer>
 
 <a class="whatsapp"
